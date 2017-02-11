@@ -29,38 +29,38 @@ $(document).ready(function(){
 			console.log('done scrolling');
 		}
 	});
-	
+
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","black");
+            $("#navigation").css("background-color","#505050");
         } else {
-            $("#navigation").css("background-color","black");
+            $("#navigation").css("background-color","#505050");
         }
     });
-	
+
 	/* ========================================================================= */
 	/*	Fix Slider Height
-	/* ========================================================================= */	
+	/* ========================================================================= */
 
 	var slideHeight = $(window).height();
-	
+
 	$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
 		$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 	});
-	
-	
+
+
 	/* ========================================================================= */
 	/*	Portfolio Filtering
-	/* ========================================================================= */	
-	
-	
+	/* ========================================================================= */
+
+
     // portfolio filtering
 
     $(".project-wrapper").mixItUp();
-	
-	
+
+
 	$(".fancybox").fancybox({
 		padding: 0,
 
@@ -72,13 +72,13 @@ $(document).ready(function(){
 
 		closeClick : true,
 	});
-	
+
 	/* ========================================================================= */
 	/*	Parallax
-	/* ========================================================================= */	
-	
+	/* ========================================================================= */
+
 	$('#facts').parallax("50%", 0.3);
-	
+
 	/* ========================================================================= */
 	/*	Timer count
 	/* ========================================================================= */
@@ -95,12 +95,12 @@ $(document).ready(function(){
             })
         })
     });
-	
+
 	/* ========================================================================= */
 	/*	Back to Top
 	/* ========================================================================= */
-	
-	
+
+
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
             $("#back-top").fadeIn(200)
@@ -113,7 +113,7 @@ $(document).ready(function(){
             scrollTop: 0
         }, 1500, "easeInOutExpo")
     });
-	
+
 });
 
 
